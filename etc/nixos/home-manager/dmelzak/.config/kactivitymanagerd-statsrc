@@ -1,0 +1,5 @@
+[Favorites-org.kde.plasma.kickoff.favorites.instance-3-dddbf738-a5f3-4465-ba6f-af1312d439b6]
+ordering=preferred://browser,applications:org.kde.dolphin.desktop,applications:org.kde.konsole.desktop,applications:com.obsproject.Studio.desktop,applications:steam.desktop,applications:duckstation-qt.desktop,applications:PCSX2.desktop,applications:ppsspp.desktop,applications:ludusavi.desktop,applications:protonup-qt.desktop,applications:protontricks.desktop
+
+[Favorites-org.kde.plasma.kickoff.favorites.instance-3-global]
+ordering=preferred://browser,applications:org.kde.dolphin.desktop,applications:org.kde.konsole.desktop,applications:com.obsproject.Studio.desktop,applications:steam.desktop,applications:duckstation-qt.desktop,applications:PCSX2.desktop,applications:ppsspp.desktop,applications:ludusavi.desktop,applications:protonup-qt.desktop,applications:protontricks.desktop

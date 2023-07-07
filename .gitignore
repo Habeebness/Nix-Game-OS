@@ -1,0 +1,3 @@
+# exclude secret files
+/etc/nixos/secrets.nix
+/etc/nixos/home-manager/secrets/*

@@ -1,0 +1,40 @@
+[$Version]
+update_info=dolphin_detailsmodesettings.upd:rename-leading-padding
+
+[ContextMenu]
+ShowAddToPlaces=false
+ShowCopyMoveMenu=true
+ShowDuplicateHere=false
+ShowOpenInNewTab=false
+ShowOpenInNewWindow=false
+ShowSortBy=false
+ShowViewMode=false
+
+[General]
+BrowseThroughArchives=true
+EditableUrl=true
+FilterBar=true
+RememberOpenedTabs=false
+ShowFullPath=true
+ShowFullPathInTitlebar=true
+SplitView=true
+Version=202
+ViewPropsTimestamp=2023,6,16,13,22,21.838
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[KPropertiesDialog]
+1920x1080 screen: Height=458
+1920x1080 screen: Width=370
+
+[MainWindow]
+MenuBar=Disabled
+ToolBarsMovable=Disabled
+
+[PreviewSettings]
+Plugins=
+
+[VersionControl]
+enabledPlugins=Git
