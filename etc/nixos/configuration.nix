@@ -120,6 +120,10 @@ in
   services = {
     dbus.enable = true;
     flatpak.enable = true;
+    udev.extraRules = ''
+      # Solaar support
+      KERNEL=="hidraw*", SUBSYSTEM=="hidraw", MODE="0664", GROUP="plugdev"
+    '';
     xserver = {
       enable = true;
       displayManager = {
@@ -169,21 +173,35 @@ in
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users = {
+    groups = {
+      plugdev = {}; # Solaar support
+      jellyfin = { # Jellyfin server group
+        gid = 980;
+      };
+    };
     mutableUsers = false;
-    users.dmelzak = {
-      description = "Daniel Melzak";
-      isNormalUser = true;
-      extraGroups = [ 
-        "audio"
-        "cdrom"
-        "disk"
-        "input"
-        "kvm"
-        "libvirtd"
-        "networkmanager"
-        "video"
-        "wheel"
-      ];
+    users = {
+      jellyfin = { # Jellyfin server user
+        isNormalUser = false;
+        uid = 980;
+        group = "jellyfin";
+      };
+      dmelzak = {
+        description = "Daniel Melzak";
+        isNormalUser = true;
+        extraGroups = [
+          "audio"
+          "cdrom"
+          "disk"
+          "input"
+          "kvm"
+          "libvirtd"
+          "networkmanager"
+          "plugdev" # Solaar support
+          "video"
+          "wheel"
+        ];
+      };
     };
   };
 
