@@ -38,7 +38,8 @@
 
   fileSystems."/games" =
     { device = "/dev/disk/by-label/GAMES";
-      fsType = "ext4";	
+      fsType = "ext4";
+      options = [ "nofail" ];
     };
 
   swapDevices = [ { device = "/dev/disk/by-label/SWAP"; } ];
